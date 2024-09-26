@@ -96,7 +96,7 @@ HTML = '''
 
         
         editor.setValue(`# Welcome to  LearninGphobia Compailer!
-# Try writing some Python code here.
+
 
 def greet(name):
     return f"Hello, {name}!"
@@ -176,6 +176,3 @@ def execute_code():
         return jsonify({'error': str(e)}), 400
     finally:
         sys.stdout = old_stdout
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
